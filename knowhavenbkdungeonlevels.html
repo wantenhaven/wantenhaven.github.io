@@ -100,31 +100,7 @@
              display: block;
           }
 
-
-
-	  .bookbutton {
-            writing-mode: vertical-lr;
-            text-orientation: mixed;
-  	    background-color: #04AA6D; /* Green */
-            border: none;
-            color: white;
-            padding: 10% 2%;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            transition-duration: 0.2s;
-            cursor: pointer;
-            margin-bottom: 10%;
-            max-height: 500px;
-           }
-
-          .bookbutton:hover {
-             background-color: LightGray;
-	     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-           }
-
-         .booktoc {
+         #booktoc {
 	    float: left;
 	    width: 20%;
             border: 4px solid black;
@@ -136,13 +112,15 @@
          }
 
          .bookpage {
+            alignment: right;
 	    width: 50%;
             border: 4px solid black;
             padding: 5%;
-            margin: auto;
             margin-bottom: 2%;
+            margin-left: 30%;
 	    background-color: white;
             text-align: left;
+            font-size:130%; /* THIS IS THE WAE FOR THE FONTS!! 130%!! BASE OFF FO BUTTERICK */
          }
 
          img  {
@@ -183,13 +161,13 @@
 
 <!-- Table of Contents -->
 
-<button class="booktoc">
+<div id="booktoc">
 <h1> <center>Table of Contents </center></h1>
 <p>Preface<br>
 1 - Defining the Dungeon<br>
 &emsp;1.2 - Dungeons in Real Life
 </p>
-</button>
+</div>
 
 
 <!-- Book -->
@@ -234,7 +212,6 @@
 
 <p> However, what have you noticed on all the examples in the preface? Caves, mines, these are not actual dungeons in terms of architetcture. In fact, only the church is close to the original meaning of it being the basement of a castle. In essence, I can remove the term "dungeon" and replace it heuristically with "RPG level." And at the same time, I can attempt to deconstruct the term through analyzing DnD, Tolkein, western fantasy, medieval romanticism and their roles in the continuous reification of racial biases, cultural darwinism, and the like.</p>
 
-<hr>
 <p> HOWEVER, I will not do that now as what I am making is a classical dungeon and I am not yet going to add another layer of deconstruction, nor dive into a thesis level analysis of this aspect of game design. Instead, I will dive into the definition of dungeon itself and not zoom in too much at this moment.</p>
 
 <p> A prelimenary online search yields a description I really liked: a "dungeon" in gaming as a "catch-all phrase for a complex of rooms" <a href="https://www.quora.com/What-is-a-dungeon-in-a-role-playing-game-RPG-Is-there-any-difference-between-a-dungeon-and-other-adventure-locations-such-as-forests-temples-etc#:~:text=So%20Dungeon%20is%20used%20as,exploring%20a%20large%20underground%20com">(from quora.)</a> This expands the dungeon into anything with complex rooms. A space-ship, a manor, mall, a temple. However, this still does not answer my puzzlement with how and why this came to be, neither does it give me solace for using that term in my own game development practice.</p>
