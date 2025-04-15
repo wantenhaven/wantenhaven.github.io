@@ -2,24 +2,10 @@
 <html>
    <head>
 <!-- HTML5 IMPORTS HOW -->
-      <title>WANTEN | Knowhaven Library</title>
+      <title>WANTEN | Knowhaven Library | Ticket to Nowhere</title>
       <link rel="icon" type="image/x-icon" href="assets/web_favicon.png">
 
       <style>
-       @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Patua+One&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
-
-         .domine-font {
-            font-family: "Domine", serif;
-            font-optical-sizing: auto;
-            font-style: normal;
-         }
-
-         .patua-one-regular {
-           font-family: "Patua One", serif;
-           font-weight: 400;
-           font-style: normal;
-         }
-
 
          html {
             cursor: url(fly.cur) 2 2, help;
@@ -28,13 +14,10 @@
          body	{background-color: orange;}
 	
          #siteheader {
-           font-family: "Winky Rough", sans-serif;
-           font-weight: 400;
-           font-style: normal;
             background-color: white; 
             padding-top: 1%;
  	    padding-bottom: 0.1%;
-            font-size:400%;
+            font-size:120%;
             text-align:center;
 
          }
@@ -49,17 +32,6 @@
             text-align: left;
          }
 
-         h1, h2, h3 { 
-             font-family: "Patua One";
-             
-
-         }
-
-         p {
-            font-family: "Domine", serif;
-            font-optical-sizing: auto;
-            font-style: normal;
-         }
 
 
          footer {
@@ -86,8 +58,8 @@
          }
 
          li {
-             display: inline;
-             font-family:"Domine"; 
+             display: inline
+             
          }
 
          li a, .dropbtn {
@@ -128,37 +100,42 @@
              display: block;
           }
 
-	  .bookbutton {
-            writing-mode: vertical-lr;
-            text-orientation: mixed;
-  	    background-color: #04AA6D; /* Green */
-            border: none;
-            color: white;
-            padding: 10% 2%;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            transition-duration: 0.2s;
-            cursor: pointer;
-            margin-bottom: 10%;
-            max-height: 500px;
-           }
+         #booktoc {
+	    float: left;
+	    width: 20%;
+            border: 4px solid black;
+            padding: 4%;
+            margin: auto;
+            margin-bottom: 2%;
+	    background-color: white;
+            text-align: left;
+         }
 
-          .bookbutton:hover {
-             background-color: LightGray;
-	     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-           }
+         .bookpage {
+            alignment: right;
+	    width: 50%;
+            border: 4px solid black;
+            padding: 5%;
+            margin-bottom: 2%;
+            margin-left: 30%;
+	    background-color: white;
+            text-align: left;
+            font-size:130%; /* THIS IS THE WAE FOR THE FONTS!! 130%!! BASE OFF FO BUTTERICK */
+         }
+
+         img  {
+            width:75%;
+         }
       </style>
 
 <center> <img src="assets/web_lizar_whole.png" alt="wanten" style="width:50%;">
 
-<div id="siteheader">Welcome to WANTENHAVEN</div>
+<div id="siteheader"><h1>Welcome to WANTENHAVEN</h1></div>
 
 <ul id="navbar"><hr>
   <li><a class="active" href="index.html">Home</a></li>
 
-  <li class="dropdown"><b>
+  <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Projects Gallery</a>
     <div class="dropdown-content">
     <a href="#artgallery">Art Gallery</a>
@@ -169,8 +146,8 @@
 
   <li><a href="#blog">Blog</a></li>
   <li><a href="#contact">Contact</a></li>
-  <li><a href="about.html">About</a></li>
-</ul></center></b>
+  <li><a href="#about">About</a></li>
+</ul></center>
 	
    </head>
 
@@ -179,24 +156,29 @@
 
 
 <!--div makes the line span the whole width -->
-<br>
+<center><p>This is website is under construction. <br></p> </center>
 
 
-<!--body -->
+<!-- Table of Contents -->
 
-
-<div class="bodybox">
-<h1> Knowhaven Library </h1>
-<p>The dust sticks to your feet as you reach the area where the wall meets the floor, that area itself hidden by large walls of dust-bunnies. Surprisingly, walking through the walls was easy, the dust walls were soft, powdery and barely solid. Past the wall you feast your eyes on a small curated library. Small shelves lined with even smaller books.</p>
-
-<p>The format of these books are based off of the concept of digital books, a format Wanten had found out through <a href="https://practicaltypography.com">Butterick's Practical Typography</a> website.
+<div id="booktoc">
+<h1> <center>Table of Contents </center></h1>
+<p>Ticket to Nowhere
 </p>
 </div>
 
-<div class="bodybox"> 
 
-<a href="knowhavenbkdungeonlevels.html"><button class="bookbutton">  <writing-mode=horizontal-lr> Dungeon Levels</button></a>
+<!-- Book -->
 
+<div class="bookpage">
+<center><h1> Ticket to Nowhere</h1><small>WANTEN, 2025</small></center><hr>
+
+<p>The cold air bites into my skin, sending pricks up the back of my neck. I feel the odd tense in my legs, my back. The not quite pins-and-needles, yet. I hold my ticket, I stand rapt next to the bus stop sign. An unfocused breath away from a shiver.</p>
+
+<p>
+This road I am in, it is either mine, or someone's. If it is not mine, then I am lost in the cold, at the mercy of the darkness, of the unseen someone. If it is mine, then the road, rain-wet and winding, span of multiple cities, is mine to own; mine to traverse; mine to make part of my world, of dark corners and overwhelming streets, of accidents and of hearses.
+
+</p>
 </div>
 
 <footer><center> <br> <small>WANTEN 2025</small> </center> </footer>
