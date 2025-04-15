@@ -47,6 +47,7 @@
             margin-bottom: 2%;
 	    background-color: white;
             text-align: left;
+	    font-size:130%;
          }
 
          h1, h2, h3 { 
@@ -66,14 +67,12 @@
 	    margin-top: 2%;
             padding: 1%;
             background-color: white;
+            font-family:"Domine"
          }
          
          blockquote {
          background-color: lightgray;
          }
-
-
-
 
 
          #navbar {
@@ -128,27 +127,51 @@
              display: block;
           }
 
+
+         .bookshelf {
+            min-height: 75px;
+            padding: 0% 1%;
+            border-bottom: 10px solid BurlyWood;
+          }
+
 	  .bookbutton {
-            writing-mode: vertical-lr;
+            writing-mode: vertical-rl;
             text-orientation: mixed;
-  	    background-color: #04AA6D; /* Green */
+  	    background-color: DarkSlateGray; /*DarkRed is good too */
             border: none;
             color: white;
-            padding: 10% 2%;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 16px;
+            font-size: 70%;
             transition-duration: 0.2s;
             cursor: pointer;
-            margin-bottom: 10%;
-            max-height: 500px;
+            margin-bottom: 0%;
+            min-height: 25%;
+            max-height: 35%;
+            padding: 2% 0%;
+            margin: 0% 0.2%;
            }
 
           .bookbutton:hover {
              background-color: LightGray;
 	     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
            }
+
+         .booktitle1 {
+            border-top: 6px solid black;
+            border-bottom: 10px solid black;
+            padding: 10%;
+            min-height: 50px;
+         }
+
+         .booktitle2 {
+            border-top: 10px double black;
+            border-bottom: 10px solid black;
+            padding: 10% 10%;
+         }
+
+         }
       </style>
 
 <center> <img src="assets/web_lizar_whole.png" alt="wanten" style="width:50%;">
@@ -187,19 +210,35 @@
 
 <div class="bodybox">
 <h1> Knowhaven Library </h1>
-<p>The dust sticks to your feet as you reach the area where the wall meets the floor, that area itself hidden by large walls of dust-bunnies. Surprisingly, walking through the walls was easy, the dust walls were soft, powdery and barely solid. Past the wall you feast your eyes on a small curated library. Small shelves lined with even smaller books.</p>
+<!-- <p>The dust sticks to your feet as you reach the area where the wall meets the floor, that area itself hidden by large walls of dust-bunnies. Surprisingly, walking through the walls was easy, the dust walls were soft, powdery and barely solid. Past the wall you feast your eyes on a small curated library. Small shelves lined with even smaller books.</p> --!>
 
-<p>The format of these books are based off of the concept of digital books, a format Wanten had found out through <a href="https://practicaltypography.com">Butterick's Practical Typography</a> website.
+<p> A collection of notes, essays, and analyses on various topics made for the hobby of it. These do not count as academic sources and are not peer-reviewed(unless stated otherwise, but is very unlikely.)</p>
+
+<p>The format of these books are inspired by the concept of digital books, a format Wanten had found out through <a href="https://practicaltypography.com">Butterick's Practical Typography</a> website.
 </p>
 </div>
 
 <div class="bodybox"> 
+<div class="bookshelf">
+<a href="knowhavenbkdungeonlevels.html"><button class="bookbutton"> <div class="booktitle1">Dungeon Levels</div></button></a>
 
-<a href="knowhavenbkdungeonlevels.html"><button class="bookbutton">  <writing-mode=horizontal-lr> Dungeon Levels</button></a>
+<!-- SAMPLES
+<a href="knowhavenbkdungeonlevels.html"><button class="bookbutton"> <div class="booktitle2">Sample</div></button></a>
 
+<a href="knowhavenbkdungeonlevels.html"><button class="bookbutton"> <div class="booktitle2">Sample2 abcd abcdsedffea</div></button></a>
+
+<a href="knowhavenbkdungeonlevels.html"><button class="bookbutton"> <div class="booktitle2">Sample3 :D</div></button></a>
+
+<a href="knowhavenbkdungeonlevels.html"><button class="bookbutton"> <div class="booktitle1">Sample4 Long named book</div></button></a>
+
+<a href="knowhavenbkdungeonlevels.html"><button class="bookbutton"> <div class="booktitle1">Sample5</div></button></a>
+
+<a href="knowhavenbkdungeonlevels.html"><button class="bookbutton"> <div class="booktitle2">Sample6 last one</div></button></a>
+--!>
+</div>
 </div>
 
-<footer><center> <br> <small>WANTEN 2025</small> </center> </footer>
+<footer><center> <br> <small>WANTEN © 2025</small> </center> </footer>
 
 </body>
 </html>
