@@ -5,19 +5,24 @@
       <link rel="icon" type="image/x-icon" href="assets/web_favicon.png">
 
       <style>
+       @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Patua+One&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
 
          html {
-            cursor: url(fly.cur) 2 2, help;
+            cursor: url(assets/fly_cursor.png) 1 1, pointer;
          } 
 
          body	{background-color: orange;}
 	
          #siteheader {
+           font-family: "Winky Rough", sans-serif;
+           font-weight: 400;
+           font-style: normal;
             background-color: white; 
             padding-top: 1%;
  	    padding-bottom: 0.1%;
-            font-size:120%;
+            font-size:400%;
             text-align:center;
+
 
          }
          .bodybox {
@@ -28,6 +33,16 @@
             margin-bottom: 10%;
 	    background-color: white;
             text-align: left;
+         }
+
+         h1, h2, h3 { 
+             font-family: "Patua One";
+         }
+
+         p {
+            font-family: "Domine", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
          }
 
 
@@ -55,7 +70,7 @@
 
          li {
              display: inline;
-             font-family:"Patua One";
+              font-family:"Domine"; 
              font-weight: bold;
          }
 
@@ -127,7 +142,7 @@
 
 <center> <img src="assets/web_lizar_whole.png" alt="wanten" style="width:50%;">
 
-<div id="siteheader"><h1>Welcome to WANTENHAVEN</h1></div>
+<div id="siteheader">Welcome to WANTENHAVEN</div>
 
 <ul id="navbar"><hr>
   <li><a class="active" href="index.html">Home</a></li>
@@ -135,7 +150,7 @@
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Projects Gallery</a>
     <div class="dropdown-content">
-    <a href="#artgallery">Art Gallery</a>
+    <a href="artgallery.html">Art Gallery</a>
     <a href="https://klepton.itch.io" target="_blank">Arcade</a>
     <a href="#wipworkshop">WIP Workshop</a>
     <a href="khlibrary.html">Knowhaven Library</a>

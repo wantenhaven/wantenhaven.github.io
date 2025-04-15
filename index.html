@@ -24,7 +24,7 @@
 
 
          html {
-            cursor: url(fly.cur) 2 2, help;
+            cursor: url(assets/fly_cursor.png) 1 1, pointer;
          } 
 
          body	{background-color: orange;}
@@ -43,20 +43,31 @@
 
          .bodybox {
 	    
-	    width: 75%;
+	    width: 60%;
             border: 4px solid black;
             padding: 5%;
             margin: auto;
+            margin-right: 50%;
+            margin-left: 5%;
             margin-bottom: 1%;
 	    background-color: white;
             text-align: left;
             font-size:130%;
          }
 
+	.statbox {
+            float: right;
+            width: 10%;
+            border: 4px solid black;
+            padding: 2%;
+            margin: auto;
+            margin-bottom: 1%;
+	    /*background-color: white;*/
+            text-align: left;
+            font-size:100%;
+         }
          h1, h2, h3 { 
              font-family: "Patua One";
-             
-
          }
 
          p {
@@ -134,6 +145,58 @@
          img  {
             width:40%;
          }
+
+         .thought {
+           display:flex;
+           background-color:#fff;
+           padding:20px;
+           border-radius:30px;
+           min-width:40px;
+           max-width:220px;
+           min-height:40px;
+           margin:20px;
+           position:relative;
+           align-items:center;
+           justify-content:center;
+           text-align:center;
+         }
+         .thought:before,.thought:after {
+           content:"";
+           background-color:#fff;
+           border-radius:50%;
+           display:block;
+           position:absolute;
+           z-index:-1;
+         }
+         .thought:before {
+           width:44px;
+           height:44px;
+           top:-12px;
+           left:28px;
+           box-shadow:-50px 30px 0 -12px #fff;
+         }
+         .thought:after {
+           bottom:-10px;
+           right:26px;
+           width:30px;
+           height:30px;
+           box-shadow:40px -34px 0 0 #fff,
+             -28px -6px 0 -2px #fff,
+             -24px 17px 0 -6px #fff,
+             -5px 25px 0 -10px #fff;
+        } 
+
+/* thought bubble code from https://codepen.io/quadbaup/pen/rKOKQv*/
+
+        .thought:hover {
+          float: center;
+        }
+
+
+  	.floatright{
+           float: right;
+           margin-right: 1%;
+         }
       </style>	
    </head>
 
@@ -151,7 +214,7 @@
 
     <a href="javascript:void(0)" class="dropbtn">Projects Gallery</a>
     <div class="dropdown-content">
-    <a href="#artgallery">Art Gallery</a>
+    <a href="artgallery.html">Art Gallery</a>
     <a href="https://klepton.itch.io" target="_blank">Arcade</a>
     <a href="#wipworkshop">WIP Workshop</a>
     <a href="khlibrary.html">Knowhaven Library</a>
@@ -165,8 +228,13 @@
 <!--div makes the line span the whole width -->
 <p>This is website is under construction. <br></p>
 
+<div class="floatright"><div class="thought"><h3>Thought Bubble</h3>
+<p><small><small>April 16, 2025</small><br> Thinking about Ruby and if I should install it...</small></p>
+</div></div>
+
 
 <div class="bodybox">
+
 <h1> The blog is born! Enter the gap under the dresser 📌</h1>
 <p>April 6, 2025</p>
 <p> Hello world! Welcome to WANTENHAVEN, my little nest in the sprawling world of the internet. I am well, WANTEN, and I made this blog to carve out a space for myself and get out of some nasty habits on social media around comparing progress with other people so I can pursue my interests in peace. My interests includes anything from game development and gaming, art, project management, and essay writing.<br>
@@ -202,7 +270,11 @@ This is a little updates post, not an actual blog/analysis post, so I will keep 
 </p>
 
 <h2> Other updates:</h2>
-<p> Other updates include increased text size for readability. Some small formatting fixes on margins, padding, and some CSS updating on the webpages.
+<p> Other updates include increased text size for readability. Some small formatting fixes on margins, padding, and some CSS updating on the webpages.</p>
+
+<p>
+(April 16,2025 edit:) Also fixed the custom cursor and tentatively added the thought cloud on the on the homepage! I also made a <a href="knowhavenbkwebsiterefs.html" target="_blank">new book on the resources I used for this website </a>that has at least the basics of what I've been inspired by and what I have referenced.
+</p>
 
 <h2> And with that...</h2>
 <p> Today's update is a wrap!</p>
