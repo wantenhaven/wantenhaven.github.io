@@ -1,28 +1,14 @@
-<!DOCTYPE html>
 <html>
    <head>
 <!-- HTML5 IMPORTS HOW -->
-      <title>WANTEN | Wip Workshop</title>
+      <title>WANTEN | Knowhaven Library | Sapirica Development Logbook</title>
       <link rel="icon" type="image/x-icon" href="assets/web_favicon.png">
 
       <style>
        @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Patua+One&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
 
-         .domine-font {
-            font-family: "Domine", serif;
-            font-optical-sizing: auto;
-            font-style: normal;
-         }
-
-         .patua-one-regular {
-           font-family: "Patua One", serif;
-           font-weight: 400;
-           font-style: normal;
-         }
-
-
          html {
-            cursor: url(assets/artgallery_cursor.png) 1 1, pointer;
+            cursor: url(assets/fly_cursor.png) 1 1, pointer;
          } 
 
          body	{background-color: orange;}
@@ -37,66 +23,33 @@
             font-size:400%;
             text-align:center;
 
+
          }
          .bodybox {
 	    
 	    width: 75%;
             border: 4px solid black;
             padding: 5%;
-            margin: auto;
-            margin-bottom: 2%;
+            margin-bottom: 10%;
 	    background-color: white;
             text-align: left;
-	    font-size:130%;
          }
 
-         h1, h2, h3, h4 { 
+         h1, h2, h3 { 
              font-family: "Patua One";
-         }
-             
-         .artframe {
-            display: inline-block;
-	    width: 50%;
-            border: 4px solid black;
-            padding: 5%;
-            padding-top: 2%;
-	    background-color: white;
-            text-align: center;
-	    font-size:130%;
-	    margin: auto;
-         }
-
-         .artblurb {
-            display: inline-block;
-	    width: 10%;
-            border: 4px solid black;
-            padding: 3%;
-	    background-color: white;
-            text-align: center;
-	    font-size:110%;
-	    margin: auto;
-            margin-top: 5%;
-         }
-
-            .artblog {
-            display: inline-block;
-	    width: 90%;
-            border: 4px solid black;
-            padding: 5%;
-            padding-top: 2%;
-	    background-color: white;
-            text-align: center;
-	    margin: auto;
-            margin-top: 2%;
-            
          }
 
          p {
-            font-family: "Domine", serif;
+            font-family: "Winky Rough", sans-serif;
             font-optical-sizing: auto;
             font-style: normal;
          }
 
+         p.title {
+            font-family: "Domine", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+         }
 
          footer {
 	    margin-top: 2%;
@@ -121,7 +74,8 @@
 
          li {
              display: inline;
-             font-family:"Domine"; 
+              font-family:"Domine"; 
+             font-weight: bold;
          }
 
          li a, .dropbtn {
@@ -162,10 +116,31 @@
              display: block;
           }
 
-         img {
-            align: center;
-            max-width: 75%;
-            max-height:50%
+         #booktoc {
+	    float: left;
+	    width: 20%;
+            border: 4px solid black;
+            padding: 4%;
+            margin: auto;
+            margin-bottom: 2%;
+	    background-color: white;
+            text-align: left;
+         }
+
+         .bookpage {
+            alignment: right;
+	    width: 50%;
+            border: 4px solid black;
+            padding: 5%;
+            margin-bottom: 2%;
+            margin-left: 30%;
+	    background-color: white;
+            text-align: left;
+            font-size:130%; /* THIS IS THE WAE FOR THE FONTS!! 130%!! BASE OFF FO BUTTERICK */
+         }
+
+         img  {
+            width:75%;
          }
       </style>
 
@@ -173,7 +148,7 @@
 
 <div id="siteheader">Welcome to WANTENHAVEN</div>
 
-<ul id="navbar"><hr><b>
+<ul id="navbar"><hr>
   <li><a class="active" href="index.html">Home</a></li>
 
   <li class="dropdown">
@@ -181,14 +156,14 @@
     <div class="dropdown-content">
     <a href="artgallery.html">Art Gallery</a>
     <a href="https://klepton.itch.io" target="_blank">Arcade</a>
-    <a href="wipworkshop.html">WIP Workshop</a>
+    <a href="#wipworkshop">WIP Workshop</a>
     <a href="khlibrary.html">Knowhaven Library</a>
     </div>
 
   <li><a href="#blog">Blog</a></li>
   <li><a href="#contact">Contact</a></li>
   <li><a href="about.html">About</a></li>
-</ul></center></b>
+</ul></center>
 	
    </head>
 
@@ -200,51 +175,30 @@
 <br>
 
 
-<!--body -->
+<!-- Table of Contents -->
 
-<div class="bodybox">
-<h1> WIP Workshop </h1>
+<div id="booktoc">
+<h1> <center>Table of Contents </center></h1>
+<p class="title">Preamble
+<br>Log
+<br>Goals
+<br>Entries
+
+</p>
 </div>
 
 
-<div>
-<center>
-<div class="artblurb">
-<h3>FBAB - 2</h3>
-<h4>Things added:</h4>
-<br>ant movement
-<br>ant look script
-<br>fly size script</p>
-</div> 
+<!-- Book -->
 
-<div class="artframe">
-<h2>FlyBoi and AntBoi 2</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9HeM3dqfjps?si=C1qZ5ZonXmXsQi8l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="bookpage">
+<center><h1> Sapirica Development Logbook </h1><small><p class="title">WANTEN, 2024-2025</small></center></p><hr>
 
-<div class="artblog">
-<p>explanatons hoping this works</p> </div>
-</div></center>
-<div>
+<!-- ENTRY -->
+<p><small>April 20, 2025 - Day 33</small><br>
+Did clean up. Shelving the project helped me clear up my thoughts. And I don't know. Sharing my progresses and making logs make me feel too exposed? Hmmm. I want, and would need, to make a more secluded, safe space for me to learn. Buttress myself while I turn into programming and game developmenet soup.
+</p>
 
-
-<div>
-<center>
-<div class="artblurb">
-<h3>FBAB - 2</h3>
-<h4>Things added:</h4>
-<br>ant movement
-<br>ant look script
-<br>fly size script</p>
-</div> 
-
-<div class="artframe">
-<h2>FlyBoi and AntBoi 2</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9HeM3dqfjps?si=C1qZ5ZonXmXsQi8l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<div class="artblog">
-<p>explanatons hoping this works</p> </div>
-</div></center>
-<div>
+</div>
 
 <footer><center> <br> <small>WANTEN © 2025</small> </center> </footer>
 
